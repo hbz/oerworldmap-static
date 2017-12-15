@@ -1,0 +1,5 @@
+$(function(){
+  
+  $('[data-slick]').slick();
+  
+});

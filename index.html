@@ -17,7 +17,7 @@ layout: page
 
 <section
   id="introduction"
-  class="pageSection bg-light-grey text-action-color"
+  class="pageSection bg-blue-light text-white text-center"
 >
   <div class="inner">
     {% include_relative landingpage/introduction.html %}
@@ -26,7 +26,7 @@ layout: page
 
 <section
   id="on-the-map"
-  class="pageSection bg-grey"
+  class="pageSection bg-grey text-center"
 >
   <div class="inner">
     {% include_relative landingpage/on-the-map.html %}
@@ -35,11 +35,9 @@ layout: page
 
 <section
   id="adding-data"
-  class="pageSection bg-light-grey bottom-0"
+  class="pageSection bg-light-grey bottom-0 text-center"
 >
-  <div class="inner">
-    {% include_relative landingpage/adding-data.html %}
-  </div>
+  {% include_relative landingpage/examples.html %}
 </section>
     
 <section
@@ -48,6 +46,24 @@ layout: page
 >
   <div class="inner">    
     {% include_relative landingpage/find.html %}
+  </div>
+</section>
+
+<section
+  id="find"
+  class="pageSection bg-light-grey text-center"
+>
+  <div class="inner">    
+    {% include_relative landingpage/contribute.html %}
+  </div>
+</section>
+
+<section
+  id="find"
+  class="pageSection bg-primary-color"
+>
+  <div class="inner">    
+    {% include_relative landingpage/partners.html %}
   </div>
 </section>
 
