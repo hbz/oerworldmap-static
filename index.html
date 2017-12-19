@@ -4,12 +4,12 @@ layout: page
 
 <section
   id="entry"
-  class="pageSection bg-primary-color text-white wide"
-  style="height: 100vh; text-align: center; background-image: url('{{ site.baseurl }}/assets/img/landingpage/map-bg.jpg')"
+  class="pageSection bg-primary-color text-center text-white wide"
+  style="min-height: 100vh; display:flex; align-items: center; background-image: url('{{ site.baseurl }}/assets/img/landingpage/map-bg.png'); background-size: cover; background-position: center center;"
 >
   <div
     class="inner"
-    style="height: 100%; padding: 110px 80px;"
+    style="padding: 110px 80px;"
   >
     {% include_relative landingpage/entry.html %}
   </div>
@@ -50,7 +50,7 @@ layout: page
 </section>
 
 <section
-  id="find"
+  id="contribute"
   class="pageSection bg-light-grey text-center"
 >
   <div class="inner">    
@@ -59,11 +59,20 @@ layout: page
 </section>
 
 <section
-  id="find"
+  id="partners"
   class="pageSection bg-primary-color"
 >
   <div class="inner">    
     {% include_relative landingpage/partners.html %}
+  </div>
+</section>
+
+<section
+  id="contact"
+  class="pageSection bg-light-grey"
+>
+  <div class="inner">    
+    {% include_relative landingpage/contact.html %}
   </div>
 </section>
 
@@ -77,7 +86,7 @@ layout: page
       title="Subscribe to the OER World Map Newsletter"
       placeholder="Email address"
       button="Subscribe"
-      subline="Leave your email address so we can keep you posted! Don't worry, we won't put your email address on the map or share it with anyone else - check out our <a href='/imprint'>privacy policy</a>."
+      subline="Leave your email address so we can keep you posted! Don't worry, we won't publish your email address or share it with anyone else - check out our <a href='/imprint'>privacy policy</a>."
     %}
   </div>
 </section>
