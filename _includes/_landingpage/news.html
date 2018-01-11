@@ -1,0 +1,15 @@
+<h3>{{ include.title }}</h3>
+
+<ul>
+  {% for post in site.posts %}
+    {% capture slugsize %}{{ post.slug | split: '.' | size }}{% endcapture %}
+    {% capture lang %}{% if slugsize == '1' %}en{% else %}{{ post.slug | split: '.' | last }}{% endif %}{% endcapture %}
+    {% if include.lang ==  lang %}
+    <li>
+      <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+      <small>{{ post.author }} on {{ post.date | date: "%m/%d/%Y" }}</small>
+      {{ post.excerpt }}
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>

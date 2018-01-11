@@ -1,3 +1,4 @@
 webrick:
   headers:
     Access-Control-Allow-Origin: "*"
+permalink: /news/:year/:month/:day/:title.html
