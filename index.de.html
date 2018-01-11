@@ -11,7 +11,7 @@ layout: page
     class="inner"
     style="height: 100%; padding: 110px 80px;"
   >
-    {% include_relative landingpage/entry.de.html %}
+    {% include _landingpage/entry.de.html %}
   </div>
 </section>
 
@@ -20,7 +20,7 @@ layout: page
   class="pageSection bg-light-grey text-action-color"
 >
   <div class="inner">
-    {% include_relative landingpage/introduction.de.html %}
+    {% include _landingpage/introduction.de.html %}
   </div>
 </section>
 
@@ -29,7 +29,7 @@ layout: page
   class="pageSection bg-grey"
 >
   <div class="inner">
-    {% include_relative landingpage/on-the-map.de.html %}
+    {% include _landingpage/on-the-map.de.html %}
   </div>
 </section>
 
@@ -38,16 +38,16 @@ layout: page
   class="pageSection bg-light-grey bottom-0"
 >
   <div class="inner">
-    {% include_relative landingpage/adding-data.de.html %}
+    {% include _landingpage/adding-data.de.html %}
   </div>
 </section>
-    
+
 <section
   id="find"
   class="pageSection bg-white"
 >
-  <div class="inner">    
-    {% include_relative landingpage/find.de.html %}
+  <div class="inner">
+    {% include _landingpage/find.de.html %}
   </div>
 </section>
 
@@ -57,7 +57,7 @@ layout: page
 >
   <div class="inner">
     {%
-      include_relative newsletter/subscribe.html
+      include _newsletter/subscribe.html
       title="OER World Map Newsletter abonnieren"
       placeholder="Ihre E-Mail-Address"
       button="Abonnieren"

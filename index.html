@@ -12,7 +12,7 @@ layout: page
     class="inner"
     style="padding: 110px 80px;"
   >
-    {% include_relative landingpage/entry.html %}
+    {% include _landingpage/entry.html %}
   </div>
 </section>
 
@@ -21,7 +21,7 @@ layout: page
   class="pageSection bg-blue-light text-white text-center"
 >
   <div class="inner">
-    {% include_relative landingpage/introduction.html %}
+    {% include _landingpage/introduction.html %}
   </div>
 </section>
 
@@ -30,7 +30,7 @@ layout: page
   class="pageSection text-center"
 >
   <div class="inner">
-    {% include_relative landingpage/on-the-map.html %}
+    {% include _landingpage/on-the-map.html %}
   </div>
 </section>
 
@@ -38,7 +38,7 @@ layout: page
   id="adding-data"
   class="pageSection bg-grey-lightest bottom-0 text-center"
 >
-  {% include_relative landingpage/examples.html %}
+  {% include _landingpage/examples.html %}
 </section>
 
 <section
@@ -46,7 +46,7 @@ layout: page
   class="pageSection bg-white"
 >
   <div class="inner">
-    {% include_relative landingpage/find.html %}
+    {% include _landingpage/find.html %}
   </div>
 </section>
 
@@ -55,7 +55,7 @@ layout: page
   class="pageSection bg-grey-lightest text-center"
 >
   <div class="inner">
-    {% include_relative landingpage/contribute.html %}
+    {% include _landingpage/contribute.html %}
   </div>
 </section>
 
@@ -64,7 +64,7 @@ layout: page
   class="pageSection bg-primary-color"
 >
   <div class="inner">
-    {% include_relative landingpage/partners.html %}
+    {% include _landingpage/partners.html %}
   </div>
 </section>
 
@@ -73,7 +73,7 @@ layout: page
   class="pageSection bg-grey-lightest"
 >
   <div class="inner">
-    {% include_relative landingpage/contact.html %}
+    {% include _landingpage/contact.html %}
   </div>
 </section>
 
@@ -83,7 +83,7 @@ layout: page
 >
   <div class="inner">
     {%
-      include_relative newsletter/subscribe.html
+      include _newsletter/subscribe.html
       title="Subscribe to the OER World Map Newsletter"
       placeholder="Email address"
       button="Subscribe"
