@@ -26,9 +26,35 @@ var selectHref = (function(){
 })();
 
 
+var animateScrollToFragment = (function(){
+  
+  var additional_offset = 0;
+
+  function init() {
+    $('[data-animate-scroll-to-fragment]').each(function(){
+      init_one(this);
+    });
+  }
+  
+  function init_one(one) {
+    $(one).click(function(){
+  		$('html, body').animate({
+  			scrollTop : $('#' + one.href.split('#')[1]).offset().top - additional_offset
+  		}, 1000);
+    });
+  }
+  
+	return {
+		init : init
+	};
+	
+})();
+
+
 $(function(){
   
   selectHref.init();
+  animateScrollToFragment.init();
   
   $('[data-slick]').slick();
   
