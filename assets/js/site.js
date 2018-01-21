@@ -50,17 +50,18 @@ var animateScrollToFragment = (function(){
 
 })();
 
-var mapStats = (function(){
+
+var injectStats = (function(){
 
   const icons = {
-    'Organization': 'fa-users',
-    'Service': 'fa-desktop',
-    'Action': 'fa-gears',
-    'Person': 'fa-user',
-    'Event': 'fa-calendar',
-    'Article': 'fa-comment',
-    'WebPage': 'fa-book',
-    'Product': 'fa-folder'
+    'Organization': 'users',
+    'Service': 'desktop',
+    'Action': 'gears',
+    'Person': 'user',
+    'Event': 'calendar',
+    'Article': 'comment',
+    'WebPage': 'book',
+    'Product': 'folder'
   }
 
   const labels = {
@@ -74,26 +75,33 @@ var mapStats = (function(){
     'Product': 'Tools'
   }
 
-  function buildColumn(bucket) {
-    return $(' \
-      <div class="col"> \
-        <a href="/resource/?filter.about.@type='+bucket.key+'"> \
-          <i class="fa '+icons[bucket.key]+'"></i><br/> \
-          '+labels[bucket.key]+'<br/> \
-          <span class="large">'+bucket.doc_count+'</span> \
-        </a> \
-      </div> \
-    ')
+  var resource;
+
+  function render_one(one) {
+      var template = $(one).find('[data-inject-stats-template]').html();
+      var html = '';
+      resource.aggregations['about.@type'].buckets.map(function(bucket){
+        html += Mustache.render(template, {
+          key: bucket.key,
+          icon: icons[bucket.key],
+          label: labels[bucket.key],
+          count: bucket.doc_count
+        });
+      });
+      $(one).html(html);
+  }
+
+  function render() {
+    $('[data-inject-stats]').each(function(){
+      render_one(this);
+    });
   }
 
   function init() {
     $.getJSON('/resource.json?size=0', function (data){
-      const row = $('<div class="row a-neutral" style="margin-top: 2.5em; line-height: 2;" />');
-      data.aggregations['about.@type'].buckets.map(function(bucket){
-        row.append(buildColumn(bucket))
-      })
-      $('#on-the-map div.inner').append(row);
-    })
+      resource = data;
+      render();
+    });
   }
 
   return {
@@ -107,7 +115,7 @@ $(function(){
 
   selectHref.init();
   animateScrollToFragment.init();
-  mapStats.init();
+  injectStats.init();
 
   $('[data-slick]').slick();
 
