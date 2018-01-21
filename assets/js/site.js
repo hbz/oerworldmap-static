@@ -98,7 +98,15 @@ var injectStats = (function(){
   }
 
   function init() {
-    $.getJSON('/resource.json?size=0', function (data){
+    var url;
+
+    if(ENVIRONMENT == 'development') {
+      url = 'https://oerworldmap.org/resource.json?size=0';
+    } else if(ENVIRONMENT == 'production') {
+      url = '/resource.json?size=0';
+    }
+
+    $.getJSON(url, function (data){
       resource = data;
       render();
     });

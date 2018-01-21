@@ -15,7 +15,17 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles-2018-01-19.css" />
+    {% if jekyll.environment == "production" %}
+      <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles-2018-01-19.css" />
+    {% endif %}
+
+    {% if jekyll.environment == "development" %}
+      <link rel="stylesheet" type="text/css" href="//oerworldmap.local/assets/styles.css" />
+    {% endif %}
+
+    <script>
+      const ENVIRONMENT = "{{jekyll.environment}}";
+    </script>
 
   </head>
   <body class="static">
