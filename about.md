@@ -14,7 +14,7 @@ The OER World Map is intended to provide the information needed to support the s
 
 ![The OER World Map seen as 'operations room' for the open education community](/assets/images/open-control-room.jpg)
 
-The OER World Map is being built by [hbz](http://www.hbz-nrw.de) and [graphthinking GmbH](http://www.graphthinking.com) in association with [The Open University (UK)](http://www.open.ac.uk/) funded by [The William and Flora Hewlett Foundation](http://www.hewlett.org/). But it belongs to the global OER community. With input and intelligence from local sources and a global network of partners and volunteers, the OER World Map will be built and updated – a resource for all.
+The OER World Map is being built by [hbz](http://www.hbz-nrw.de) and [graphthinking GmbH](http://www.graphthinking.com) in association with [The Open University (UK)](http://www.open.ac.uk/) funded by [The William and Flora Hewlett Foundation](http://www.hewlett.org/). But it belongs to the global OER community. With input and intelligence from local sources and a global network of partners and volunteers, the OER World Map will be built and updated – a resource for all. 
 
 ![hbz](/assets/images/image06.gif) ![graphthinkingGmbH](/assets/images/image10.png) ![The Open University](/assets/images/image07.png) ![The William and Flora Hewlett Foundation](/assets/images/image04.jpg)
 
@@ -24,7 +24,7 @@ The OER World Map is being built by [hbz](http://www.hbz-nrw.de) and [graphthink
 
 ### Philipp von Böselager (Back-End Developer)
 ![Philipp von Böselager](/assets/images/image05.png)
-Philipp ([@boesephil](https://twitter.com/boesephil) on Twitter) is a Java backend developer in the field of Computational Linguistics (CL). After having worked with search engines, parsers, neural networks and speech synthesis in the course of his CL studies at the University of Cologne he went on to gain general IT experience at a German Java focused company. Later on he worked as a backend developer in an eDiscovery company, finally heading for the open minded spirit of the University-related HBZ again. He is deeply convinced of the WWW to serve for the common welfare and therefore being open and truly loves to work on a project he severely identifies with.
+Philipp ([@boesephil](https://twitter.com/boesephil) on Twitter) is a Java backend developer in the field of Computational Linguistics (CL). After having worked with search engines, parsers, neural networks and speech synthesis in the course of his CL studies at the University of Cologne he went on to gain general IT experience at a German Java focused company. Later on he worked as a backend developer in an eDiscovery company, finally heading for the open minded spirit of the University-related HBZ again. He is deeply convinced of the WWW to serve for the common welfare and therefore being open and truly loves to work on a project he severely identifies with. 
 
 ### Karin Driesen (Online Editor)
 ![Karin Driesen](/assets/images/Karin-Driesen-130.jpg)
@@ -59,3 +59,5 @@ Johannes is the front-end developer of the project. Together with Felix Link he 
 ### Ben Buschfeld (Design)
 ![Ben Buschfeld](/assets/images/image02.jpg)
 Ben has been the frontend-designer of the project until December 2015. He studied communication design from 1990-1994 and is working on the web and digital media since 1995, when he wrote the initial draft and subsequently acted as the art director and project manager of the B2B-platform Baunetz.de. After the launch 1997 he teached as a visiting professor for information design at UDLA in Mexico and founded his own studio [http://www.buschfeld.com](http://www.buschfeld.com) – graphic and interface design in Berlin. Since then he developed a number of publications, corporate identity programs, websites, information portals, and graphical user interfaces – working for clients from various industries, cultural and political institutions. His design work and public engagement was frequently awarded.
+
+
